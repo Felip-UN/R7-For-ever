@@ -80,7 +80,8 @@ for i in range(n):
 print("2 elevado a ", n,"es:",potencia) #El deseado
 ```
 **Entrada:** 4 **Salida deseada:** 2 elevado a  4 es: 16
-Version variada para ver todos los pasos, este imprimira lo que se describio en la linea 5
+
+Version variada para ver todos los pasos, este imprimira lo que se describio en la linea 5 el programa de arriba:
 ```python
 n = int(input("Introduce un número mayor o igual a 0: "))
 potencia = 1 # Inicializamos el resultado en 1, ya que cualquier número elevado a la potencia 0 es 1
@@ -90,6 +91,7 @@ for i in range(n):
 print("2 elevado a ", n,"es:",potencia)
 ```
 **Misma entrada**
+
 **Salida deseada:**
 
 2
