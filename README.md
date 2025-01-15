@@ -47,6 +47,7 @@ if n >= 1: #Condicion inicial
 else:
     print("El número debe ser mayor o igual a 1.")
 ```
+**Nota:** Se tomo inspiracion de: https://github.com/Felip-UN/Bucles-R6?tab=readme-ov-file#4-imprimir-el-factorial-de-un-n%C3%BAmero-natural-n-dado ya que hablaba de un mismo tema
 5. Calcular el valor de 2 elevado a la potencia n usando ciclos for.
 #### Programa
 ```python
@@ -78,6 +79,14 @@ print(x,"elevado a ",n ,"es:", potencia) #Solo imprimimos el resultado deseado, 
 ```
 7. Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
 #### Programa
+```python
+for tabla in range(1, 10):  #Bucle para las tablas del 1 al 9
+  print("\nTabla de multiplicar del", tabla) 
+  #Bucle para mostrar las multiplicaciones de la tabla actual:
+  for n1_10 in range(1, 11):  #Ciclo para multiplicar de 1 a 10
+    salida = tabla * n1_10
+    print(tabla,"x", n1_10,"=",salida)
+```
 8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
 $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 9. Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
