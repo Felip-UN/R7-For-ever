@@ -1,4 +1,5 @@
 # R7-For-ever
+**Nota:** en lo posible se escribora la posible salida del programa si no es muy extenza, en caso de que no este se le anima a probarlos en un interprete, disculpe las molestias
 ## Retos
 1. Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
 #### Programa
