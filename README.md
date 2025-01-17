@@ -127,25 +127,24 @@ for tabla in range(1, 10):  #Bucle para las tablas del 1 al 9
 **Salida deseada:** *Salida muy extensa*
 
 ### 8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación. 
-#### Serie de Maclaurin para la función exponencial \( e^x \)
 
 $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 
-Forma que queremos implementar en python:
+**Forma que queremos implementar en python: (Serie de Maclaurin)**
 
 $$
 e^x \approx \frac{x^0}{0!} + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
 $$
+
 #### Programa
 ```
 import math
 #Buscaremos hacer una suma finita:
 def aproximacion_maclaurin(m, rango=10):
-    suma_f = 0
-    for n in range(rango): #rango+1 porque queremos llegar HASTA el numero de rango definido, osea que se incluye
-      suma_f += m**n / math.factorial(n)  # Se importa la funcion factorial("math.factorial()") para ahorrarse pasos6
-    return suma_f
-
+  suma_f = 0
+  for n in range(rango): #rango+1 porque queremos llegar HASTA el numero de rango definido, osea que se incluye
+    suma_f += m**n / math.factorial(n)  # Se importa la funcion factorial("math.factorial()") para ahorrarse pasos6
+  return suma_f
 
 x=int(input("Ingresa el numero que quieres probar: "))
 print("Hasta donde quieres probar la aproximacion?(Numero)")
