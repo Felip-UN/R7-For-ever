@@ -133,15 +133,15 @@ $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 
 La serie de Maclaurin para la función exponencial \( e^x \) alrededor de 0 está dada por la siguiente expresión:
 
-\[
+$$
 e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
-\]
+$$
 
 Lo cual, si tomamos los primeros \( n \) términos, se aproxima a:
 
-\[
+$$
 e^x \approx 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
-\]
+$$
 
 ### 9. Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
 $$sin(x) \approx sin(x,n) \approx \sum_{i=0}^{n} (-1)^i \frac{x^{2i+1}}{(2i+1)!}$$
