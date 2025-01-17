@@ -134,8 +134,41 @@ $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 Forma que queremos implementar en python:
 
 $$
-e^x \approx 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
+e^x \approx \frac{x^0}{0!} + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
 $$
+#### Programa
+```
+import math
+#Buscaremos hacer una suma finita:
+def aproximacion_maclaurin(m, rango=10):
+    suma_f = 0
+    for n in range(rango): #rango+1 porque queremos llegar HASTA el numero de rango definido, osea que se incluye
+      suma_f += m**n / math.factorial(n)  # Se importa la funcion factorial("math.factorial()") para ahorrarse pasos6
+    return suma_f
+
+
+x=int(input("Ingresa el numero que quieres probar: "))
+print("Hasta donde quieres probar la aproximacion?(Numero)")
+n=int(input("Ayuda: Con 10 se acerca bastante al valor real: "))
+aprox=aproximacion_maclaurin(x,n)
+exacto=math.exp(x) #funcion exponecial solo permite un argumento, este sera x ya que es "e**x"
+print("Valor real:",exacto)
+print("Aproximacion:",aprox)
+```
+Con esta si que dure, complicado pero creo acercarme a lo que se pedia :)
+
+**Salidas de Consola:**
+
+Ingresa el numero que quieres probar: 4
+
+Hasta donde quieres probar la aproximacion?(Numero)
+
+Ayuda: Con 10 se acerca bastante al valor real: 10
+
+Valor real: 54.598150033144236
+
+Aproximacion: 54.15414462081129
 
 ### 9. Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
+
 $$sin(x) \approx sin(x,n) \approx \sum_{i=0}^{n} (-1)^i \frac{x^{2i+1}}{(2i+1)!}$$
