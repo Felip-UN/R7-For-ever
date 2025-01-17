@@ -126,18 +126,12 @@ for tabla in range(1, 10):  #Bucle para las tablas del 1 al 9
 ```
 **Salida deseada:** *Salida muy extensa*
 
-### 8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación.
+### 8. Diseñar una función que permita calcular una aproximación de la función exponencial alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. **Nota:** use *math* para traer la función exponencial y mostrar la diferencia entre el valor real y la aproximación. 
+#### Serie de Maclaurin para la función exponencial \( e^x \)
+
 $$e^x \approx exp(x,n) \approx \sum_{i=0}^{n}\frac{x^i}{i!}$$
 
-# Serie de Maclaurin para la función exponencial \( e^x \)
-
-La serie de Maclaurin para la función exponencial \( e^x \) alrededor de 0 está dada por la siguiente expresión:
-
-$$
-e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
-$$
-
-Lo cual, si tomamos los primeros \( n \) términos, se aproxima a:
+Forma que queremos implementar en python:
 
 $$
 e^x \approx 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \cdots
